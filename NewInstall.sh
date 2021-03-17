@@ -10,4 +10,4 @@ sudo pacman-mirrors --fasttrack
 echo "--------------------------"
 echo "Updating the system"
 
-sudo pacman -Syu
+sudo pacman -Syu -y
