@@ -6,3 +6,8 @@ echo "Beginning new installation process"
 
 echo "Finding the fastest mirror"
 sudo pacman-mirrors --fasttrack
+
+echo "--------------------------"
+echo "Updating the system"
+
+sudo pacman -Syu
