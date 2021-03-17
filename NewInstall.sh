@@ -1,13 +1,22 @@
 #! /usr/bin/bash
 
+echo "**********************************"
 echo "Beginning new installation process"
+echo "**********************************"
 
 #Set the fastest mirror
 
+echo "**************************"
 echo "Finding the fastest mirror"
+echo "**************************"
+
 sudo pacman-mirrors --fasttrack
 
-echo "--------------------------"
-echo "Updating the system"
+#Update the system
 
-sudo pacman -Syu 
+echo "*******************"
+echo "Updating the system"
+echo "*******************"
+
+yes | sudo pacman -Syu 
+
