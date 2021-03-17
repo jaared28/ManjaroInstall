@@ -2,9 +2,6 @@
 
 echo "Beginning new installation process"
 
-#Yes command to input yes for yest  or no questions
-yes | ./ManjoroInstall
-
 #Set the fastest mirror
 
 echo "Finding the fastest mirror"
