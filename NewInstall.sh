@@ -63,4 +63,4 @@ echo "**************************"
 echo "Installing Microsoft fonts"
 echo "**************************"
 
-yay -S ttf-ms-fonts
+printf "\n \n" | yay -S ttf-ms-fonts
