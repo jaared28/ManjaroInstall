@@ -35,3 +35,16 @@ echo "Downloading new kernel"
 echo "**********************"
 
 yes | sudo mhwd-kernel -i linux510
+
+#Install Yay AUR helper
+#Make a package manager folder and install Yay in it
+
+echo "***************"
+echo "Intstalling Yay"
+echo "***************"
+
+mkdir Package Managers
+cd Package Managers
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
