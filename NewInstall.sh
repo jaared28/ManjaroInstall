@@ -42,7 +42,7 @@ echo "************************************"
 echo "Installing base-devel group packages"
 echo "************************************"
 
-sudo pacman -S -needed base-devel
+sudo pacman -S base-devel
 
 #Install Yay AUR helper
 #Make a package manager folder and install Yay in it
@@ -51,7 +51,7 @@ echo "***************"
 echo "Intstalling Yay"
 echo "***************"
 
-mkdir Package Managers
+mkdir PackageManagers
 cd Package Managers
 git clone https://aur.archlinux.org/yay.git
 cd yay
