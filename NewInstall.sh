@@ -36,6 +36,14 @@ echo "**********************"
 
 yes | sudo mhwd-kernel -i linux510
 
+#Install missing base-devel group packages
+
+echo "************************************"
+echo "Installing base-devel group packages"
+echo "************************************"
+
+sudo pacman -S -needed base-devel
+
 #Install Yay AUR helper
 #Make a package manager folder and install Yay in it
 
