@@ -56,3 +56,11 @@ cd PackageManagers
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
+
+#Install Microsoft fonts
+
+echo "**************************"
+echo "Installing Microsoft fonts"
+echo "**************************"
+
+yay -S ttf-ms-fonts
