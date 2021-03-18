@@ -34,4 +34,4 @@ echo "**********************"
 echo "Downloading new kernel"
 echo "**********************"
 
-sudo mhwd-kernel -i linux510
+yes | sudo mhwd-kernel -i linux510
