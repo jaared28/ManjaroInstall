@@ -1,30 +1,37 @@
 #! /usr/bin/bash
 
-echo "\n**********************************"
+echo "**********************************"
 echo "Beginning new installation process"
-echo "**********************************\n"
+echo "**********************************"
 
 #Set the fastest mirror
 
-echo "\n**************************"
+echo "**************************"
 echo "Finding the fastest mirror"
-echo "**************************\n"
+echo "**************************"
 
 sudo pacman-mirrors --fasttrack
 
 #Update the system
 
-echo "\n*******************"
+echo "*******************"
 echo "Updating the system"
-echo "*******************\n"
+echo "*******************"
 
 yes | sudo pacman -Syu 
 
 #enable TRIM to extend the lifespan of the SSD
 
-echo "\n*************"
+echo "*************"
 echo "Enabling TRIM"
-echo "*************\n"
+echo "*************"
 
 sudo systemctl enable fstrim.timer
 
+#Download the latest linux kernel
+
+echo "**********************"
+echo "Downloading new kernel"
+echo "**********************"
+
+sudo mhwd-kernel -i linux510
