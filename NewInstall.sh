@@ -53,9 +53,9 @@ echo "***************"
 
 mkdir PackageManagers
 cd PackageManagers
-git clone https://aur.archlinux.org/yay.git
+printf "y" | git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+printf "y" | makepkg -si
 
 #Install Microsoft fonts
 
